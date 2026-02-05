@@ -40,7 +40,7 @@ app.post("/notify", async (req, res) => {
       JSON.parse(s),
       JSON.stringify({
         title: `${Kicsoda}`,
-	  body: `${Kicsoda}${Kicsoda === "Végeredmény" ? " került bejegyzésre: " : "vitt fel"} itt: ${Hol}`
+	  body: `${Kicsoda}${Kicsoda === "Végeredmény" ? " került bejegyzésre: " : " tippe(ke)t vitt fel"} itt: ${Hol}`
       })
     );
   }
@@ -52,4 +52,5 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log("Push server running on port", PORT);
 });
+
 
