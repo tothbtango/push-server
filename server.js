@@ -34,6 +34,7 @@ app.post("/subscribe", (req, res) => {
 });
 
 app.post("/notify", async (req, res) => {
+	 const { Kicsoda, Hol } = req.body;   // ← get A or B
   for (const s of subs) {
     await webpush.sendNotification(
       JSON.parse(s),
@@ -51,3 +52,4 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log("Push server running on port", PORT);
 });
+
