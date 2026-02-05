@@ -20,7 +20,7 @@ const PUBLIC_KEY = process.env.PUBLIC_KEY;
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
 
 webpush.setVapidDetails(
-  "mailto:tothbtango@gmail.com",
+  "mailto:test@example.com",
   PUBLIC_KEY,
   PRIVATE_KEY
 );
