@@ -38,8 +38,8 @@ app.post("/notify", async (req, res) => {
     await webpush.sendNotification(
       JSON.parse(s),
       JSON.stringify({
-        title: "Button clicked",
-        body: "Someone pressed a button"
+        title: `${Kicsoda}`,
+	  body: `${Kicsoda}${Kicsoda === "Végeredmény" ? " került bejegyzésre: " : "vitt fel"} itt: ${Hol}`
       })
     );
   }
